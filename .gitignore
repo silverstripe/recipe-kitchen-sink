@@ -6,3 +6,4 @@
 /public/resources/
 .vscode/
 .vagrant/
+.idea/

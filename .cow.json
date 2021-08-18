@@ -1,23 +1,33 @@
 {
-  "github-slug": "silverstripe/cwp-recipe-kitchen-sink",
-  "changelog-holder": "cwp/cwp",
+  "github-slug": "silverstripe/recipe-kitchen-sink",
+  "changelog-holder": "silverstripe/framework",
   "changelog-path": "docs/en/05_Releases_and_changelogs/cwp_{version}.md",
   "changelog-template": ".changelog.md.twig",
   "changelog-include-other-changes": true,
   "child-stability-inherit": [
-    "cwp/cwp-installer",
+    "cwp/cwp-recipe-core",
+    "cwp/cwp-recipe-cms",
+    "silverstripe/recipe-blog",
+    "silverstripe/recipe-form-building",
+    "silverstripe/recipe-authoring-tools",
+    "silverstripe/recipe-collaboration",
+    "silverstripe/recipe-reporting-tools",
+    "cwp/cwp-recipe-search",
+    "silverstripe/recipe-services",
     "silverstripe/recipe-content-blocks"
   ],
   "dependency-constraint": "exact",
   "vendors": [
     "cwp",
-    "silverstripe"
+    "silverstripe",
+    "tractorcow"
   ],
   "exclude": [
     "silverstripe/recipe-plugin"
   ],
   "upgrade-only": [
     "dnadesign/silverstripe-elemental-userforms",
-    "silverstripe/subsites"
+    "silverstripe/subsites",
+    "tractorcow/silverstripe-fluent"
   ]
 }
