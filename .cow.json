@@ -5,7 +5,7 @@
   "changelog-template": ".changelog.md.twig",
   "changelog-include-other-changes": true,
   "child-stability-inherit": [
-    "cwp/cwp-recipe-core",
+    "cwp/cwp-core",
     "cwp/cwp-recipe-cms",
     "silverstripe/recipe-blog",
     "silverstripe/recipe-form-building",
@@ -28,6 +28,7 @@
   "upgrade-only": [
     "dnadesign/silverstripe-elemental-userforms",
     "silverstripe/subsites",
-    "tractorcow/silverstripe-fluent"
+    "tractorcow/silverstripe-fluent",
+    "cwp/cwp-core"
   ]
 }

@@ -24,7 +24,6 @@
         "symbiote/silverstripe-multivaluefield": "5.x-dev",
         "silverstripe/subsites": "2.x-dev",
         "cwp/cwp-recipe-cms": "2.x-dev",
-        "cwp/cwp-recipe-core": "2.x-dev",
         "cwp/cwp-recipe-search": "2.x-dev",
         "cwp/starter-theme": "3.x-dev",
         "silverstripe/mfa": "4.x-dev",
@@ -36,7 +35,12 @@
         "silverstripe/recipe-services": "1.x-dev",
         "silverstripe/registry": "2.x-dev",
         "silverstripe/totp-authenticator": "4.x-dev",
-        "tractorcow/silverstripe-fluent": "4.x-dev"
+        "tractorcow/silverstripe-fluent": "4.x-dev",
+        "cwp/cwp-core": "2.x-dev",
+        "silverstripe/auditor": "2.x-dev",
+        "silverstripe/environmentcheck": "2.x-dev",
+        "silverstripe/hybridsessions": "2.x-dev",
+        "silverstripe/recipe-core": "4.x-dev"
     },
     "require-dev": {
         "silverstripe/frameworktest": "4.x-dev",
@@ -52,8 +56,5 @@
         "process-timeout": 600
     },
     "prefer-stable": true,
-    "minimum-stability": "dev",
-    "provide": {
-        "cwp/cwp-installer": "2.x-dev"
-    }
+    "minimum-stability": "dev"
 }
