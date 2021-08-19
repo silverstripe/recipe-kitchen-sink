@@ -6,7 +6,8 @@
   "changelog-include-other-changes": true,
   "child-stability-inherit": [
     "cwp/cwp-core",
-    "cwp/cwp-recipe-cms",
+    "silverstripe/recipe-core",
+    "silverstripe/recipe-cms",
     "silverstripe/recipe-blog",
     "silverstripe/recipe-form-building",
     "silverstripe/recipe-authoring-tools",
