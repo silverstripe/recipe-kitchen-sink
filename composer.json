@@ -41,7 +41,8 @@
         "silverstripe/hybridsessions": "2.x-dev",
         "silverstripe/recipe-core": "4.x-dev",
         "silverstripe/html5": "2.x-dev",
-        "silverstripe/recipe-cms": "4.x-dev"
+        "silverstripe/recipe-cms": "4.x-dev",
+        "silverstripe/installer": "4.x-dev"
     },
     "require-dev": {
         "silverstripe/frameworktest": "4.x-dev",

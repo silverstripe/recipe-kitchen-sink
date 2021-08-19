@@ -15,7 +15,8 @@
     "silverstripe/recipe-reporting-tools",
     "cwp/cwp-recipe-search",
     "silverstripe/recipe-services",
-    "silverstripe/recipe-content-blocks"
+    "silverstripe/recipe-content-blocks",
+    "silverstripe/installer"
   ],
   "dependency-constraint": "exact",
   "vendors": [
@@ -30,6 +31,9 @@
     "dnadesign/silverstripe-elemental-userforms",
     "silverstripe/subsites",
     "tractorcow/silverstripe-fluent",
-    "cwp/cwp-core"
+    "cwp/cwp-core",
+    "cwp/agency-extensions",
+    "cwp/watea-theme",
+    "cwp/starter-theme"
   ]
 }
