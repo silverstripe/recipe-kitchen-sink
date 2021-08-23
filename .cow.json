@@ -5,7 +5,6 @@
   "changelog-template": ".changelog.md.twig",
   "changelog-include-other-changes": true,
   "child-stability-inherit": [
-    "cwp/cwp-core",
     "silverstripe/recipe-core",
     "silverstripe/recipe-cms",
     "silverstripe/recipe-blog",
@@ -32,6 +31,8 @@
     "silverstripe/subsites",
     "tractorcow/silverstripe-fluent",
     "cwp/cwp-core",
+    "cwp/cwp",
+    "cwp/cwp-pdfexport",
     "cwp/agency-extensions",
     "cwp/watea-theme",
     "cwp/starter-theme"

@@ -36,6 +36,8 @@
         "silverstripe/totp-authenticator": "4.x-dev",
         "tractorcow/silverstripe-fluent": "4.x-dev",
         "cwp/cwp-core": "2.x-dev",
+        "cwp/cwp": "2.x-dev",
+        "cwp/cwp-pdfexport": "1.x-dev",
         "silverstripe/auditor": "2.x-dev",
         "silverstripe/environmentcheck": "2.x-dev",
         "silverstripe/hybridsessions": "2.x-dev",
