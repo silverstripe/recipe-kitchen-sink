@@ -1,8 +1,8 @@
 {
-    "name": "cwp/cwp-recipe-kitchen-sink",
+    "name": "silverstripe/recipe-kitchen-sink",
     "type": "silverstripe-recipe",
-    "description": "Internal testing CWP recipe for all modules, optional and suggested",
-    "homepage": "https://www.cwp.govt.nz",
+    "description": "Internal testing Silverstripe cMS recipe for all modules, optional and suggested",
+    "homepage": "https://github.com/silverstripe/recipe-kitchen-sink",
     "license": "BSD-3-Clause",
     "require": {
         "php": ">=7.1.0",
