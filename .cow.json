@@ -21,7 +21,8 @@
   "vendors": [
     "cwp",
     "silverstripe",
-    "tractorcow"
+    "tractorcow",
+    "symbiote"
   ],
   "exclude": [
     "silverstripe/recipe-plugin"
@@ -35,6 +36,7 @@
     "cwp/cwp-pdfexport",
     "cwp/agency-extensions",
     "cwp/watea-theme",
-    "cwp/starter-theme"
+    "cwp/starter-theme",
+    "symbiote/silverstripe-multivaluefield"
   ]
 }
