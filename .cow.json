@@ -17,7 +17,7 @@
     "silverstripe/recipe-content-blocks",
     "silverstripe/installer"
   ],
-  "dependency-constraint": "exact",
+  "dependency-constraint": "loose",
   "vendors": [
     "cwp",
     "silverstripe",
