@@ -44,7 +44,7 @@
         "cwp/cwp-pdfexport": "1.2.x-dev",
         "dnadesign/silverstripe-elemental-userforms": "3.0.x-dev",
         "symbiote/silverstripe-multivaluefield": "5.1.x-dev",
-        "tractorcow/silverstripe-fluent": "4.1.x-dev"
+        "tractorcow/silverstripe-fluent": "4.5.x-dev"
     },
     "require-dev": {
         "silverstripe/frameworktest": "4.x-dev",
