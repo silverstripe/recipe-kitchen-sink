@@ -12,7 +12,8 @@
     "silverstripe/recipe-authoring-tools",
     "silverstripe/recipe-collaboration",
     "silverstripe/recipe-reporting-tools",
-    "cwp/cwp-recipe-search",
+    "silverstripe/recipe-ccl",
+    "silverstripe/recipe-solr-search",
     "silverstripe/recipe-services",
     "silverstripe/recipe-content-blocks",
     "silverstripe/installer"

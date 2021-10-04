@@ -48,7 +48,7 @@
     </testsuite>
 
     <!-- Core CWP recipes -->
-    <testsuite name="cwp-recipe-core">
+    <testsuite name="recipe-ccl">
         <directory>vendor/cwp/cwp-core/tests</directory>
         <directory>vendor/silverstripe/auditor/tests</directory>
         <directory>vendor/silverstripe/environmentcheck/tests</directory>
@@ -65,7 +65,7 @@
         <directory>vendor/symbiote/silverstripe-errorpage/tests</directory>
     </testsuite>
 
-    <testsuite name="cwp-recipe-search">
+    <testsuite name="recipe-solr-search">
         <directory>vendor/cwp/cwp</directory>
         <directory>vendor/cwp/cwp-search/tests</directory>
         <directory>vendor/silverstripe/fulltextsearch/tests</directory>

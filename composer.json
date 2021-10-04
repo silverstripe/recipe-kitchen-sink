@@ -1,7 +1,7 @@
 {
     "name": "silverstripe/recipe-kitchen-sink",
     "type": "silverstripe-recipe",
-    "description": "Internal testing Silverstripe cMS recipe for all modules, optional and suggested",
+    "description": "Internal testing Silverstripe CMS recipe for all modules, optional and suggested",
     "homepage": "https://github.com/silverstripe/recipe-kitchen-sink",
     "license": "BSD-3-Clause",
     "require": {
@@ -15,7 +15,7 @@
         "silverstripe/recipe-reporting-tools": "1.9.x-dev",
         "silverstripe/recipe-services": "1.9.x-dev",
         "silverstripe/recipe-content-blocks": "2.9.x-dev",
-        "cwp/cwp-recipe-search": "2.9.x-dev",
+        "silverstripe/recipe-solr-search": "2.9.x-dev",
 
         "silverstripe/registry": "2.3.x-dev",
         "silverstripe/totp-authenticator": "4.2.x-dev",
@@ -39,7 +39,7 @@
         "cwp/starter-theme": "3.2.x-dev",
         "cwp/agency-extensions": "2.5.x-dev",
         "cwp/watea-theme": "3.1.x-dev",
-        "cwp/cwp-core": "2.8.x-dev",
+        "silverstripe/recipe-ccl": "2.9.x-dev",
         "cwp/cwp": "2.8.x-dev",
         "cwp/cwp-pdfexport": "1.2.x-dev",
         "dnadesign/silverstripe-elemental-userforms": "3.0.x-dev",
