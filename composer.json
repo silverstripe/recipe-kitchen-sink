@@ -20,7 +20,6 @@
         "silverstripe/registry": "2.x-dev",
         "silverstripe/totp-authenticator": "4.x-dev",
         "silverstripe/mfa": "4.x-dev",
-        "silverstripe/controllerpolicy": "2.x-dev",
         "silverstripe/crontask": "2.x-dev",
         "silverstripe/gridfieldqueuedexport": "2.x-dev",
         "silverstripe/ldap": "1.x-dev",
