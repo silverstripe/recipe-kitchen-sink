@@ -29,9 +29,9 @@ matrix:
     - env: PHPUNIT_TEST=framework-orm
     - env: PHPUNIT_TEST=framework-core
     - env: PHPUNIT_TEST=recipe-cms
-    - env: PHPUNIT_TEST=cwp-recipe-core PDO=1
+    - env: PHPUNIT_TEST=recipe-ccl PDO=1
     - env: PHPUNIT_TEST=cwp-recipe-cms
-    - env: PHPUNIT_TEST=cwp-recipe-search PDO=1
+    - env: PHPUNIT_TEST=recipe-solr-search PDO=1
     - env: PHPUNIT_TEST=recipe-authoring-tools
     - env: PHPUNIT_TEST=recipe-blog
     - env: PHPUNIT_TEST=recipe-collaboration

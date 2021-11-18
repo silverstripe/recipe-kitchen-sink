@@ -1,7 +1,7 @@
 {
     "name": "silverstripe/recipe-kitchen-sink",
     "type": "silverstripe-recipe",
-    "description": "Internal testing Silverstripe cMS recipe for all modules, optional and suggested",
+    "description": "Internal testing Silverstripe CMS recipe for all modules, optional and suggested",
     "homepage": "https://github.com/silverstripe/recipe-kitchen-sink",
     "license": "BSD-3-Clause",
     "require": {
@@ -15,7 +15,7 @@
         "silverstripe/recipe-reporting-tools": "1.x-dev",
         "silverstripe/recipe-services": "1.x-dev",
         "silverstripe/recipe-content-blocks": "2.x-dev",
-        "cwp/cwp-recipe-search": "2.x-dev",
+        "silverstripe/recipe-solr-search": "2.x-dev",
 
         "silverstripe/registry": "2.x-dev",
         "silverstripe/totp-authenticator": "4.x-dev",
@@ -30,15 +30,12 @@
         "silverstripe/webauthn-authenticator": "4.x-dev",
         "silverstripe/security-extensions": "4.x-dev",
         "silverstripe/subsites": "2.x-dev",
-        "silverstripe/auditor": "2.x-dev",
-        "silverstripe/environmentcheck": "2.x-dev",
-        "silverstripe/hybridsessions": "2.x-dev",
         "silverstripe/html5": "2.x-dev",
 
         "cwp/starter-theme": "3.x-dev",
         "cwp/agency-extensions": "2.x-dev",
         "cwp/watea-theme": "3.x-dev",
-        "cwp/cwp-core": "2.x-dev",
+        "silverstripe/recipe-ccl": "2.x-dev",
         "cwp/cwp": "2.x-dev",
         "cwp/cwp-pdfexport": "1.x-dev",
         "dnadesign/silverstripe-elemental-userforms": "3.x-dev",
@@ -49,8 +46,7 @@
         "silverstripe/frameworktest": "4.x-dev",
         "silverstripe/graphql-devtools": "1.x-dev",
         "silverstripe/recipe-testing": "^2",
-        "mikey179/vfsstream": "^1.6",
-        "dms/phpunit-arraysubset-asserts": "^0.3.0"
+        "mikey179/vfsstream": "^1.6"
     },
     "replace": {
         "sminnee/phpunit": "*",
