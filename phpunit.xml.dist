@@ -36,12 +36,12 @@
 
         <!-- Optional CWP modules that aren't in recipes -->
         <testsuite name="Default">
-            <directory>mysite/tests</directory>
             <directory>vendor/cwp/agency-extensions/tests</directory>
             <directory>vendor/silverstripe/subsites/tests</directory>
             <directory>vendor/silverstripe/ckan-registry/tests</directory>
             <directory>vendor/silverstripe/crontask/tests</directory>
             <directory>vendor/silverstripe/gridfieldqueuedexport/tests</directory>
+            <directory>vendor/silverstripe/errorpage/tests</directory>
             <directory>vendor/silverstripe/registry/tests</directory>
             <directory>vendor/silverstripe/textextraction/tests</directory>
             <directory>vendor/tractorcow/silverstripe-fluent/tests</directory>
