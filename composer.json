@@ -16,6 +16,7 @@
         "silverstripe/recipe-services": "1.x-dev",
         "silverstripe/recipe-content-blocks": "2.x-dev",
         "silverstripe/recipe-solr-search": "2.x-dev",
+        "silverstripe/recipe-ccl": "2.x-dev",
 
         "silverstripe/registry": "2.x-dev",
         "silverstripe/totp-authenticator": "4.x-dev",
@@ -35,7 +36,6 @@
         "cwp/starter-theme": "3.x-dev",
         "cwp/agency-extensions": "2.x-dev",
         "cwp/watea-theme": "3.x-dev",
-        "silverstripe/recipe-ccl": "2.x-dev",
         "cwp/cwp": "2.x-dev",
         "cwp/cwp-pdfexport": "1.x-dev",
         "dnadesign/silverstripe-elemental-userforms": "3.x-dev",
