@@ -48,12 +48,14 @@
         "silverstripe/recipe-testing": "^2",
         "mikey179/vfsstream": "^1.6"
     },
-    "replace": {
-        "sminnee/phpunit": "*",
-        "sminnee/phpunit-mock-objects": "*"
-    },
     "extra": {
-        "project-files": []
+        "project-files": [
+            "app/*"
+        ],
+        "public-files": [
+            "assets/*",
+            "favicon.ico"
+        ]
     },
     "config": {
         "process-timeout": 600
