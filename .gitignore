@@ -7,3 +7,4 @@
 .vscode/
 .vagrant/
 .idea/
+/.graphql-generated
