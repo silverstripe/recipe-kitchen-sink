@@ -58,7 +58,12 @@
         ]
     },
     "config": {
-        "process-timeout": 600
+        "process-timeout": 600,
+        "allow-plugins": {
+            "composer/installers": true,
+            "silverstripe/recipe-plugin": true,
+            "silverstripe/vendor-plugin": true
+        }
     },
     "prefer-stable": true,
     "minimum-stability": "dev"
