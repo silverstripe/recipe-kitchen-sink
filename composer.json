@@ -5,7 +5,7 @@
     "homepage": "https://github.com/silverstripe/recipe-kitchen-sink",
     "license": "BSD-3-Clause",
     "require": {
-        "php": "^7.3 || ^8.0",
+        "php": "^7.4 || ^8.0",
         "silverstripe/recipe-plugin": "^1",
         "silverstripe/installer": "4.x-dev",
         "silverstripe/recipe-authoring-tools": "1.x-dev",
