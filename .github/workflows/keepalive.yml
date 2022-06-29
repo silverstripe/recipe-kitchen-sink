@@ -1,0 +1,15 @@
+name: Keepalive
+
+on:
+  workflow_dispatch:
+  # The 1st of every month at 3:50pm UTC
+  schedule:
+    - cron: '50 15 1 * *'
+
+jobs:
+  keepalive:
+    name: Keepalive
+    runs-on: ubuntu-latest
+    steps:
+      - name: Keepalive
+        uses: silverstripe/gha-keepalive@v1
