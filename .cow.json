@@ -29,15 +29,6 @@
     "silverstripe/recipe-plugin"
   ],
   "upgrade-only": [
-    "dnadesign/silverstripe-elemental-userforms",
-    "silverstripe/subsites",
-    "tractorcow/silverstripe-fluent",
-    "cwp/cwp-core",
-    "cwp/cwp",
-    "cwp/cwp-pdfexport",
-    "cwp/agency-extensions",
-    "cwp/watea-theme",
-    "cwp/starter-theme",
-    "symbiote/silverstripe-multivaluefield"
+    "tractorcow/silverstripe-fluent"
   ]
 }
