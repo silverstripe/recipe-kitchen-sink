@@ -1,7 +1,7 @@
 {
   "github-slug": "silverstripe/recipe-kitchen-sink",
-  "changelog-holder": "silverstripe/framework",
-  "changelog-path": "docs/en/04_Changelogs/{stability}/{version}.md",
+  "changelog-holder": "silverstripe/developer-docs",
+  "changelog-path": "en/04_Changelogs/{stability}/{version}.md",
   "changelog-template": ".cow/changelog.md.twig",
   "changelog-include-other-changes": false,
   "child-stability-inherit": [
