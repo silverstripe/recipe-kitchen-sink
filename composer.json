@@ -18,6 +18,7 @@
         "silverstripe/recipe-solr-search": "2.x-dev",
         "silverstripe/recipe-ccl": "2.x-dev",
 
+        "silverstripe/developer-docs": "4.x-dev",
         "silverstripe/registry": "2.x-dev",
         "silverstripe/totp-authenticator": "4.x-dev",
         "silverstripe/mfa": "4.x-dev",
