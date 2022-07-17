@@ -43,7 +43,7 @@
         "tractorcow/silverstripe-fluent": "4.6.x-dev"
     },
     "require-dev": {
-        "silverstripe/frameworktest": "4.x-dev",
+        "silverstripe/frameworktest": "^0.4.5",
         "silverstripe/graphql-devtools": "1.x-dev",
         "silverstripe/recipe-testing": "^2",
         "mikey179/vfsstream": "^1.6"

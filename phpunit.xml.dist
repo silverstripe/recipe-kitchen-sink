@@ -47,25 +47,14 @@
             <directory>vendor/tractorcow/silverstripe-fluent/tests</directory>
         </testsuite>
 
-        <!-- Core CWP recipes -->
-        <testsuite name="cwp-recipe-core">
+        <testsuite name="recipe-ccl">
             <directory>vendor/cwp/cwp-core/tests</directory>
             <directory>vendor/silverstripe/auditor/tests</directory>
             <directory>vendor/silverstripe/environmentcheck/tests</directory>
             <directory>vendor/silverstripe/hybridsessions/tests</directory>
-            <directory>vendor/silverstripe/mimevalidator/tests</directory>
         </testsuite>
 
-        <testsuite name="cwp-recipe-cms">
-            <directory>vendor/cwp/cwp-core/tests</directory>
-            <directory>vendor/cwp/cwp/tests</directory>
-            <directory>vendor/cwp/cwp-pdfexport/tests</directory>
-            <directory>vendor/silverstripe/html5/tests</directory>
-            <directory>vendor/symbiote/silverstripe-gridfieldextensions/tests</directory>
-        </testsuite>
-
-        <testsuite name="cwp-recipe-search">
-            <directory>vendor/cwp/cwp</directory>
+        <testsuite name="recipe-solr-search">
             <directory>vendor/cwp/cwp-search/tests</directory>
             <directory>vendor/silverstripe/fulltextsearch/tests</directory>
             <directory>vendor/symbiote/silverstripe-queuedjobs/tests</directory>
@@ -137,5 +126,6 @@
             <directory>vendor/silverstripe/login-forms/tests</directory>
             <directory>vendor/silverstripe/security-extensions/tests</directory>
         </testsuite>
+
     </testsuites>
 </phpunit>
