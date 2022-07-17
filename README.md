@@ -1,6 +1,6 @@
 ## Silverstripe CMS kitchen sink recipe
 
-[![Build Status](https://app.travis-ci.com/silverstripe/recipe-kitchen-sink.svg?branch=4)](https://travis-ci.com/silverstripe/recipe-kitchen-sink)
+[![CI](https://github.com/silverstripe/recipe-kitchen-sink/actions/workflows/ci.yml/badge.svg)](https://github.com/silverstripe/recipe-kitchen-sink/actions/workflows/ci.yml)
 
 The kitchen sink is an internal recipe used for testing the full Silverstripe CMS feature sets,
 including optional and suggested modules.
