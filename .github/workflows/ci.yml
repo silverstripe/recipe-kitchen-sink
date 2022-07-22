@@ -14,3 +14,21 @@ jobs:
     # Only run cron on the silverstripe account
     if: (github.event_name == 'schedule' && startsWith(github.repository, 'silverstripe/')) || (github.event_name != 'schedule')
     uses: silverstripe/gha-ci/.github/workflows/ci.yml@v1
+    with:
+      # Use simple_matrix to limit the number of created jobs
+      # phpunit.xml.dist has a large number of testsuites, all of which are tested with
+      # multiple versions of php + databases in both the modules themselves and other recipes
+      # such as recipe-form-building
+      simple_matrix: true
+      # Also include jobs with the lowest version of PHP with --prefer-lowest and
+      # the highest version of PHP to ensure everything installs
+      # This should be php 7.3 & 8.0 in 4.10, and php 7.4 & 8.1 in 4.11+
+      # Run recipe-cms testsuite because that's the most likely to have weird conflicts e.g. graphql
+      extra_jobs: |
+        - php: 7.3
+          composer_args: --prefer-lowest
+          phpunit: true
+          phpunit_suite: recipe-cms
+        - php: 8.0
+          phpunit: true
+          phpunit_suite: recipe-cms
