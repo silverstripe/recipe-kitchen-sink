@@ -29,6 +29,6 @@ jobs:
           composer_args: --prefer-lowest
           phpunit: true
           phpunit_suite: recipe-cms
-        - php: 8.0
+        - php: 8.1
           phpunit: true
           phpunit_suite: recipe-cms
