@@ -64,7 +64,6 @@
         <testsuite name="recipe-authoring-tools">
             <directory>vendor/silverstripe/documentconverter/tests</directory>
             <directory>vendor/silverstripe/iframe/tests</directory>
-            <directory>vendor/silverstripe/spellcheck/tests</directory>
             <directory>vendor/silverstripe/tagfield/tests</directory>
             <directory>vendor/silverstripe/taxonomy/tests</directory>
         </testsuite>
@@ -75,7 +74,6 @@
             <directory>vendor/silverstripe/widgets/tests</directory>
             <directory>vendor/silverstripe/content-widget/tests</directory>
             <directory>vendor/silverstripe/spamprotection/tests</directory>
-            <directory>vendor/silverstripe/akismet/tests</directory>
             <directory>vendor/silverstripe/comments/tests</directory>
             <directory>vendor/silverstripe/comment-notifications/tests</directory>
         </testsuite>
