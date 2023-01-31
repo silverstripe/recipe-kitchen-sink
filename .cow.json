@@ -23,7 +23,8 @@
     "cwp",
     "silverstripe",
     "tractorcow",
-    "symbiote"
+    "symbiote",
+    "dnadesign"
   ],
   "exclude": [
     "silverstripe/recipe-plugin"
