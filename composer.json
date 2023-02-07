@@ -28,7 +28,6 @@
         "silverstripe/realme": "5.x-dev",
         "silverstripe/ckan-registry": "2.x-dev",
         "silverstripe/webauthn-authenticator": "5.x-dev",
-        "silverstripe/security-extensions": "5.x-dev",
         "silverstripe/subsites": "3.x-dev",
         "cwp/starter-theme": "4.x-dev",
         "cwp/agency-extensions": "3.x-dev",
