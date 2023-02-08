@@ -30,6 +30,7 @@
     "silverstripe/recipe-plugin"
   ],
   "upgrade-only": [
+    "colymba/gridfield-bulk-editing-tools",
     "tractorcow/silverstripe-fluent"
   ]
 }

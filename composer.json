@@ -29,12 +29,16 @@
         "silverstripe/ckan-registry": "2.x-dev",
         "silverstripe/webauthn-authenticator": "5.x-dev",
         "silverstripe/subsites": "3.x-dev",
+        "silverstripe/lumberjack": "3.x-dev",
+        "silverstripe/staticpublishqueue": "6.x-dev",
         "cwp/starter-theme": "4.x-dev",
         "cwp/agency-extensions": "3.x-dev",
         "cwp/watea-theme": "4.x-dev",
         "cwp/cwp": "3.x-dev",
         "dnadesign/silverstripe-elemental-userforms": "4.x-dev",
         "symbiote/silverstripe-multivaluefield": "6.x-dev",
+        "symbiote/silverstripe-gridfieldextensions": "4.x-dev",
+        "colymba/gridfield-bulk-editing-tools": "4.x-dev",
         "silverstripe/silverstripe-fluent": "7.x-dev"
     },
     "require-dev": {
