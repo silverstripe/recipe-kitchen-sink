@@ -39,7 +39,7 @@
         "symbiote/silverstripe-multivaluefield": "6.0.x-dev",
         "symbiote/silverstripe-gridfieldextensions": "4.0.x-dev",
         "colymba/gridfield-bulk-editing-tools": "4.0.x-dev",
-        "silverstripe/silverstripe-fluent": "7.0.x-dev",
+        "tractorcow/silverstripe-fluent": "7.0.x-dev",
         "silverstripe/dynamodb": "5.0.x-dev"
     },
     "require-dev": {
