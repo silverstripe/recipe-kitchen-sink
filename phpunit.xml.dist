@@ -124,8 +124,10 @@
             <directory>vendor/silverstripe/totp-authenticator/tests</directory>
             <directory>vendor/silverstripe/webauthn-authenticator/tests</directory>
             <directory>vendor/silverstripe/login-forms/tests</directory>
-            <directory>vendor/silverstripe/security-extensions/tests</directory>
         </testsuite>
 
+        <testsuite name="other">
+            <directory>vendor/silverstripe/security-extensions/tests</directory>
+        </testsuite>
     </testsuites>
 </phpunit>
