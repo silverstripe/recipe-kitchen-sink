@@ -36,7 +36,7 @@
         "cwp/watea-theme": "3.x-dev",
         "cwp/cwp": "2.x-dev",
         "cwp/cwp-pdfexport": "1.x-dev",
-        "dnadesign/silverstripe-elemental-userforms": "~3.2.1@stable",
+        "dnadesign/silverstripe-elemental-userforms": "~3.3.0@stable",
         "symbiote/silverstripe-multivaluefield": "5.x-dev",
         "tractorcow/silverstripe-fluent": "4.x-dev"
     },
