@@ -26,11 +26,10 @@
     "symbiote",
     "dnadesign"
   ],
-  "exclude": [
-    "silverstripe/recipe-plugin"
-  ],
   "upgrade-only": [
     "colymba/gridfield-bulk-editing-tools",
-    "tractorcow/silverstripe-fluent"
+    "tractorcow/silverstripe-fluent",
+    "silverstripe/recipe-plugin",
+    "silverstripe/vendor-plugin"
   ]
 }
