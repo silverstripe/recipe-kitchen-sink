@@ -4,15 +4,10 @@ on:
   push:
   pull_request:
   workflow_dispatch:
-  # Every day at 3:00pm UTC
-  schedule:
-    - cron: '0 15 * * *'
 
 jobs:
   ci:
     name: CI
-    # Only run cron on the silverstripe account
-    if: (github.event_name == 'schedule' && github.repository_owner == 'silverstripe') || (github.event_name != 'schedule')
     uses: silverstripe/gha-ci/.github/workflows/ci.yml@v1
     with:
       # Use simple_matrix to limit the number of created jobs
@@ -22,14 +17,12 @@ jobs:
       simple_matrix: true
       # Also include jobs with the lowest version of PHP with --prefer-lowest and
       # the highest version of PHP to ensure everything installs
-      # This should be php 7.3 & 8.0 in 4.10, and php 7.4 & 8.1 in 4.11+
       # Run recipe-cms testsuite because that's the most likely to have weird conflicts e.g. graphql
       extra_jobs: |
         - php: 8.1
+          composer_args: --prefer-lowest
           phpunit: true
           phpunit_suite: recipe-cms
-      # TODO: renable prefer-lowest build once CMS 5 beta is out
-      # - php: 8.1
-      #   composer_args: --prefer-lowest
-      #   phpunit: true
-      #   phpunit_suite: recipe-cms
+        - php: 8.2
+          phpunit: true
+          phpunit_suite: recipe-cms

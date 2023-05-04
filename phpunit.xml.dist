@@ -128,6 +128,5 @@
             <directory>vendor/symbiote/silverstripe-gridfieldextensions/tests</directory>
             <directory>vendor/silverstripe/staticpublishqueue/tests</directory>
         </testsuite>
-
     </testsuites>
 </phpunit>
