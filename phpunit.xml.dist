@@ -38,7 +38,6 @@
         <testsuite name="Default">
             <directory>vendor/cwp/agency-extensions/tests</directory>
             <directory>vendor/silverstripe/subsites/tests</directory>
-            <directory>vendor/silverstripe/ckan-registry/tests</directory>
             <directory>vendor/silverstripe/crontask/tests</directory>
             <directory>vendor/silverstripe/gridfieldqueuedexport/tests</directory>
             <directory>vendor/silverstripe/errorpage/tests</directory>
@@ -54,12 +53,6 @@
             <directory>vendor/silverstripe/hybridsessions/tests</directory>
         </testsuite>
 
-        <testsuite name="recipe-solr-search">
-            <directory>vendor/cwp/cwp-search/tests</directory>
-            <directory>vendor/silverstripe/fulltextsearch/tests</directory>
-            <directory>vendor/symbiote/silverstripe-queuedjobs/tests</directory>
-        </testsuite>
-
         <!-- Optional SilverStripe recipes -->
         <testsuite name="recipe-authoring-tools">
             <directory>vendor/silverstripe/documentconverter/tests</directory>
@@ -71,11 +64,7 @@
         <testsuite name="recipe-blog">
             <directory>vendor/silverstripe/blog/tests</directory>
             <directory>vendor/silverstripe/lumberjack/tests</directory>
-            <directory>vendor/silverstripe/widgets/tests</directory>
-            <directory>vendor/silverstripe/content-widget/tests</directory>
             <directory>vendor/silverstripe/spamprotection/tests</directory>
-            <directory>vendor/silverstripe/comments/tests</directory>
-            <directory>vendor/silverstripe/comment-notifications/tests</directory>
         </testsuite>
 
         <testsuite name="recipe-collaboration">
