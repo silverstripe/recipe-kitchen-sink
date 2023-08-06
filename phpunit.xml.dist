@@ -13,14 +13,10 @@
             <directory>vendor/silverstripe/framework/tests/php/ORM</directory>
         </testsuite>
         <testsuite name="framework-core">
-            <directory>vendor/silverstripe/framework/tests/php/Control</directory>
-            <directory>vendor/silverstripe/framework/tests/php/Core</directory>
-            <directory>vendor/silverstripe/framework/tests/php/Dev</directory>
-            <directory>vendor/silverstripe/framework/tests/php/Forms</directory>
-            <directory>vendor/silverstripe/framework/tests/php/Logging</directory>
-            <directory>vendor/silverstripe/framework/tests/php/Security</directory>
-            <directory>vendor/silverstripe/framework/tests/php/View</directory>
-            <directory>vendor/silverstripe/framework/tests/php/i18n</directory>
+            <directory>vendor/silverstripe/framework/tests/php</directory>
+            <exclude>
+                <directory>vendor/silverstripe/framework/tests/php/ORM</directory>
+            </exclude>
         </testsuite>
 
         <testsuite name="recipe-cms">
