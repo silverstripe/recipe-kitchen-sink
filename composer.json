@@ -15,7 +15,10 @@
         "silverstripe/recipe-reporting-tools": "2.x-dev",
         "silverstripe/recipe-services": "2.x-dev",
         "silverstripe/recipe-content-blocks": "3.x-dev",
+        "silverstripe/auditor": "3.x-dev",
         "silverstripe/developer-docs": "5.x-dev",
+        "silverstripe/environmentcheck": "3.x-dev",
+        "silverstripe/hybridsessions": "3.x-dev",
         "silverstripe/registry": "3.x-dev",
         "silverstripe/totp-authenticator": "5.x-dev",
         "silverstripe/mfa": "5.x-dev",
@@ -34,6 +37,7 @@
         "dnadesign/silverstripe-elemental-userforms": "4.x-dev",
         "symbiote/silverstripe-multivaluefield": "6.x-dev",
         "symbiote/silverstripe-gridfieldextensions": "4.x-dev",
+        "symbiote/silverstripe-queuedjobs": "5.x-dev",
         "colymba/gridfield-bulk-editing-tools": "4.x-dev",
         "tractorcow/silverstripe-fluent": "7.x-dev",
         "silverstripe/dynamodb": "5.x-dev"

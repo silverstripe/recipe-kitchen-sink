@@ -27,9 +27,6 @@
     "dnadesign"
   ],
   "upgrade-only": [
-    "colymba/gridfield-bulk-editing-tools",
-    "tractorcow/silverstripe-fluent",
-    "silverstripe/recipe-plugin",
-    "silverstripe/vendor-plugin"
+    "tractorcow/silverstripe-fluent"
   ]
 }
