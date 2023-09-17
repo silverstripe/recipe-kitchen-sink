@@ -14,9 +14,7 @@
         </testsuite>
         <testsuite name="framework-core">
             <directory>vendor/silverstripe/framework/tests/php</directory>
-            <exclude>
-                <directory>vendor/silverstripe/framework/tests/php/ORM</directory>
-            </exclude>
+            <exclude>vendor/silverstripe/framework/tests/php/ORM</exclude>
         </testsuite>
 
         <testsuite name="recipe-cms">
