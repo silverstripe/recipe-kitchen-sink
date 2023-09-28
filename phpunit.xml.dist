@@ -112,6 +112,7 @@
         <testsuite name="other">
             <directory>vendor/symbiote/silverstripe-gridfieldextensions/tests</directory>
             <directory>vendor/silverstripe/staticpublishqueue/tests</directory>
+            <directory>vendor/silverstripe/linkfield/tests</directory>
         </testsuite>
     </testsuites>
 </phpunit>
