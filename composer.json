@@ -40,7 +40,8 @@
         "symbiote/silverstripe-queuedjobs": "5.x-dev",
         "colymba/gridfield-bulk-editing-tools": "4.x-dev",
         "tractorcow/silverstripe-fluent": "7.x-dev",
-        "silverstripe/dynamodb": "5.x-dev"
+        "silverstripe/dynamodb": "5.x-dev",
+        "silverstripe/linkfield": "4.x-dev"
     },
     "require-dev": {
         "silverstripe/frameworktest": "^1",
