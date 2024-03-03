@@ -1,5 +1,5 @@
 ---
-Name: cwpcoreenvironmentchecks
+Name: coreenvironmentchecks
 ---
 SilverStripe\EnvironmentCheck\EnvironmentCheckSuite:
   registered_checks:
@@ -9,17 +9,3 @@ SilverStripe\EnvironmentCheck\EnvironmentCheckSuite:
   registered_suites:
     health:
       - db
-
----
-Name: cwpcoresolrenvironmentcheck
-Only:
-  moduleexists: 'cwp/cwp-search'
----
-SilverStripe\EnvironmentCheck\EnvironmentCheckSuite:
-  registered_checks:
-    solr:
-      definition: 'SilverStripe\EnvironmentCheck\Checks\SolrIndexCheck()'
-      title: 'Are all Solr indexes available?'
-  registered_suites:
-    health:
-      - solr
