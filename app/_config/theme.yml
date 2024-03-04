@@ -1,9 +1,8 @@
 ---
-Name: cwptheme
+Name: theme
 ---
 SilverStripe\View\SSViewer:
   themes:
     - '$public'
-    - 'watea'
-    - 'starter'
+    - 'simple'
     - '$default'

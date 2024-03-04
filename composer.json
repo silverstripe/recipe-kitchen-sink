@@ -31,8 +31,6 @@
         "silverstripe/subsites": "4.x-dev",
         "silverstripe/lumberjack": "4.x-dev",
         "silverstripe/staticpublishqueue": "7.x-dev",
-        "cwp/starter-theme": "5.x-dev",
-        "cwp/watea-theme": "5.x-dev",
         "dnadesign/silverstripe-elemental-userforms": "5.x-dev",
         "symbiote/silverstripe-multivaluefield": "7.x-dev",
         "symbiote/silverstripe-gridfieldextensions": "5.x-dev",

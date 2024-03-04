@@ -28,9 +28,8 @@
             <directory>vendor/silverstripe/cms/tests/</directory>
         </testsuite>
 
-        <!-- Optional CWP modules that aren't in recipes -->
+        <!-- Optional modules that aren't in recipes -->
         <testsuite name="Default">
-            <directory>vendor/cwp/agency-extensions/tests</directory>
             <directory>vendor/silverstripe/subsites/tests</directory>
             <directory>vendor/silverstripe/crontask/tests</directory>
             <directory>vendor/silverstripe/gridfieldqueuedexport/tests</directory>
@@ -41,7 +40,6 @@
         </testsuite>
 
         <testsuite name="recipe-ccl">
-            <directory>vendor/cwp/cwp-core/tests</directory>
             <directory>vendor/silverstripe/auditor/tests</directory>
             <directory>vendor/silverstripe/environmentcheck/tests</directory>
             <directory>vendor/silverstripe/hybridsessions/tests</directory>

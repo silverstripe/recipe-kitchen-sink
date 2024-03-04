@@ -17,12 +17,3 @@ composer create-project silverstripe/recipe-kitchen-sink ./cms-sink ^4
 
 See the [recipe plugin](https://github.com/silverstripe/recipe-plugin) page for instructions on how
 Silverstripe CMS recipes work.
-
-## Troubleshooting
-
-### Page and PageController parent classes
-
-When installing the kitchen sink, your project Page and PageController subclasses may be set to extend
-SiteTree and ContentController. This is [only an issue](https://github.com/silverstripe/cwp-recipe-kitchen-sink/issues/30)
-with the kitchen sink recipe, and requires you to manually change the parent classes to CWP's BasePage and
-BasePageController.
