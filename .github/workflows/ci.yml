@@ -26,3 +26,6 @@ jobs:
         - php: 8.2
           phpunit: true
           phpunit_suite: recipe-cms
+        - php: 8.3
+          phpunit: true
+          phpunit_suite: recipe-cms
