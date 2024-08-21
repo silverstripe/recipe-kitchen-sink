@@ -38,7 +38,8 @@
         "colymba/gridfield-bulk-editing-tools": "5.x-dev",
         "tractorcow/silverstripe-fluent": "8.x-dev",
         "silverstripe/dynamodb": "6.x-dev",
-        "silverstripe/linkfield": "5.x-dev"
+        "silverstripe/linkfield": "5.x-dev",
+        "silverstripe/graphql": "6.x-dev"
     },
     "require-dev": {
         "silverstripe/frameworktest": "^2",
