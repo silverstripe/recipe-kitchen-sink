@@ -19,179 +19,176 @@ jobs:
       # the highest version of PHP to ensure everything installs
       # Run recipe-cms testsuite because that's the most likely to have weird conflicts e.g. graphql
       extra_jobs: |
-        - php: 8.1
+        - php: 8.3
           composer_args: --prefer-lowest
-          phpunit: true
-          phpunit_suite: recipe-cms
-        - php: 8.2
           phpunit: true
           phpunit_suite: recipe-cms
         - php: 8.3
           phpunit: true
           phpunit_suite: recipe-cms
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: silverstripe-elemental
           endtoend_config: vendor/dnadesign/silverstripe-elemental/behat.yml
           endtoend_tags: job1
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: silverstripe-elemental
           endtoend_config: vendor/dnadesign/silverstripe-elemental/behat.yml
           endtoend_tags: job2
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: silverstripe-elemental
           endtoend_config: vendor/dnadesign/silverstripe-elemental/behat.yml
           endtoend_tags: job3
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: silverstripe-elemental
           endtoend_config: vendor/dnadesign/silverstripe-elemental/behat.yml
           endtoend_tags: job4
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: silverstripe-elemental
           endtoend_config: vendor/dnadesign/silverstripe-elemental/behat.yml
           endtoend_tags: job5
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: silverstripe-elemental
           endtoend_config: vendor/dnadesign/silverstripe-elemental/behat.yml
           endtoend_tags: job6,job7,job8,job9
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: silverstripe-elemental-userforms
           endtoend_config: vendor/dnadesign/silverstripe-elemental-userforms/behat.yml
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: silverstripe-advancedworkflow
           endtoend_config: vendor/symbiote/silverstripe-advancedworkflow/behat.yml
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: admin
           endtoend_config: vendor/silverstripe/admin/behat.yml
           endtoend_tags: job1
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: admin
           endtoend_config: vendor/silverstripe/admin/behat.yml
           endtoend_tags: job2
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: admin
           endtoend_config: vendor/silverstripe/admin/behat.yml
           endtoend_tags: job3,job4,job5,job6
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: asset-admin
           endtoend_config: vendor/silverstripe/asset-admin/behat.yml
           endtoend_tags: job1
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: asset-admin
           endtoend_config: vendor/silverstripe/asset-admin/behat.yml
           endtoend_tags: job2
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: asset-admin
           endtoend_config: vendor/silverstripe/asset-admin/behat.yml
           endtoend_tags: job3,job4,job5,job6
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: blog
           endtoend_config: vendor/silverstripe/blog/behat.yml
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: campaign-admin
           endtoend_config: vendor/silverstripe/campaign-admin/behat.yml
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: cms
           endtoend_config: vendor/silverstripe/cms/behat.yml
           endtoend_tags: job1
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: cms
           endtoend_config: vendor/silverstripe/cms/behat.yml
           endtoend_tags: job2
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: cms
           endtoend_config: vendor/silverstripe/cms/behat.yml
           endtoend_tags: job3,job4,job5,job6
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: contentreview
           endtoend_config: vendor/silverstripe/contentreview/behat.yml
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: elemental-bannerblock
           endtoend_config: vendor/silverstripe/elemental-bannerblock/behat.yml
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: elemental-fileblock
           endtoend_config: vendor/silverstripe/elemental-fileblock/behat.yml
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: externallinks
           endtoend_config: vendor/silverstripe/externallinks/behat.yml
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: linkfield
           endtoend_config: vendor/silverstripe/linkfield/behat.yml
           endtoend_tags: job1
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: linkfield
           endtoend_config: vendor/silverstripe/linkfield/behat.yml
           endtoend_tags: job2,job3,job4,job5
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: mfa
           endtoend_config: vendor/silverstripe/mfa/behat.yml
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: securityreport
           endtoend_config: vendor/silverstripe/securityreport/behat.yml
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: session-manager
           endtoend_config: vendor/silverstripe/session-manager/behat.yml
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: sharedraftcontent
           endtoend_config: vendor/silverstripe/sharedraftcontent/behat.yml
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: siteconfig
           endtoend_config: vendor/silverstripe/siteconfig/behat.yml
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: sitewidecontent-report
           endtoend_config: vendor/silverstripe/sitewidecontent-report/behat.yml
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: subsites
           endtoend_config: vendor/silverstripe/subsites/behat.yml
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: taxonomy
           endtoend_config: vendor/silverstripe/taxonomy/behat.yml
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: totp-authenticator
           endtoend_config: vendor/silverstripe/totp-authenticator/behat.yml
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: userforms
           endtoend_config: vendor/silverstripe/userforms/behat.yml
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: versioned-admin
           endtoend_config: vendor/silverstripe/versioned-admin/behat.yml
           endtoend_tags: job1
-        - php: 8.1
+        - php: 8.3
           endtoend: true
           endtoend_suite: versioned-admin
           endtoend_config: vendor/silverstripe/versioned-admin/behat.yml
