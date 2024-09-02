@@ -21,7 +21,6 @@
             <directory>vendor/silverstripe/admin/tests/php/</directory>
             <directory>vendor/silverstripe/campaign-admin/tests/php/</directory>
             <directory>vendor/silverstripe/asset-admin/tests/php/</directory>
-            <directory>vendor/silverstripe/graphql/tests/</directory>
             <directory>vendor/silverstripe/siteconfig/tests/php/</directory>
             <directory>vendor/silverstripe/reports/tests/</directory>
             <!-- CMS needs to run last because the SearchFormTest enables FulltextSearchable  -->
@@ -106,6 +105,7 @@
         </testsuite>
 
         <testsuite name="other">
+            <directory>vendor/silverstripe/graphql/tests/</directory>
             <directory>vendor/symbiote/silverstripe-gridfieldextensions/tests</directory>
             <directory>vendor/silverstripe/staticpublishqueue/tests</directory>
             <directory>vendor/silverstripe/linkfield/tests</directory>
