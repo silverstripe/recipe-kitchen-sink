@@ -43,7 +43,7 @@
     },
     "require-dev": {
         "silverstripe/frameworktest": "^2",
-        "silverstripe/graphql-devtools": "1.x-dev",
+        "silverstripe/graphql-devtools": "2.x-dev",
         "silverstripe/recipe-testing": "^4",
         "mikey179/vfsstream": "^1.6"
     },
