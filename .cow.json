@@ -27,6 +27,5 @@
     "dnadesign"
   ],
   "upgrade-only": [
-    "tractorcow/silverstripe-fluent"
   ]
 }
