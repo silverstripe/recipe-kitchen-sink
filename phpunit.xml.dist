@@ -9,12 +9,13 @@
         </testsuite>
 
         <!-- Framework ORM tests are split up to run in parallel -->
-        <testsuite name="framework-orm">
-            <directory>vendor/silverstripe/framework/tests/php/ORM</directory>
-        </testsuite>
         <testsuite name="framework-core">
+            <!-- Will be run in github actions CI with option exclude-filter /ORM/ -->
             <directory>vendor/silverstripe/framework/tests/php</directory>
-            <exclude>vendor/silverstripe/framework/tests/php/ORM</exclude>
+        </testsuite>
+        <testsuite name="framework-orm">
+            <!-- Will be run in github actions CI with option filter /ORM/ -->
+            <directory>vendor/silverstripe/framework/tests/php</directory>
         </testsuite>
 
         <testsuite name="recipe-cms">
