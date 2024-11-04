@@ -6,6 +6,7 @@
             <directory>vendor/silverstripe/config/tests</directory>
             <directory>vendor/silverstripe/assets/tests/php/</directory>
             <directory>vendor/silverstripe/versioned/tests/php/</directory>
+            <directory>vendor/silverstripe/template-engine/tests/php/</directory>
         </testsuite>
 
         <!-- Framework ORM tests are split up to run in parallel -->
