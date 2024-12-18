@@ -6,162 +6,245 @@ on:
   workflow_dispatch:
 
 jobs:
-  ci:
-    name: CI
-    uses: silverstripe/gha-ci/.github/workflows/ci.yml@v1
-    with:
-      # Use simple_matrix to limit the number of created jobs
-      # phpunit.xml.dist has a large number of testsuites, all of which are tested with
-      # multiple versions of php + databases in both the modules themselves and other recipes
-      # such as recipe-form-building
-      simple_matrix: true
-      # Also include jobs with the lowest version of PHP with --prefer-lowest and
-      # the highest version of PHP to ensure everything installs
-      # Run recipe-cms testsuite because that's the most likely to have weird conflicts e.g. graphql
-      extra_jobs: |
-        - php: 8.3
-          composer_args: --prefer-lowest
-          phpunit: true
-          phpunit_suite: recipe-cms
-        - php: 8.3
-          phpunit: true
-          phpunit_suite: recipe-cms
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: silverstripe-elemental
-          endtoend_config: vendor/dnadesign/silverstripe-elemental/behat.yml
-          endtoend_tags: job1
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: silverstripe-elemental
-          endtoend_config: vendor/dnadesign/silverstripe-elemental/behat.yml
-          endtoend_tags: job2
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: silverstripe-elemental
-          endtoend_config: vendor/dnadesign/silverstripe-elemental/behat.yml
-          endtoend_tags: job3
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: silverstripe-elemental
-          endtoend_config: vendor/dnadesign/silverstripe-elemental/behat.yml
-          endtoend_tags: job4
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: silverstripe-elemental
-          endtoend_config: vendor/dnadesign/silverstripe-elemental/behat.yml
-          endtoend_tags: job5
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: silverstripe-elemental
-          endtoend_config: vendor/dnadesign/silverstripe-elemental/behat.yml
-          endtoend_tags: job6,job7,job8,job9
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: silverstripe-elemental-userforms
-          endtoend_config: vendor/dnadesign/silverstripe-elemental-userforms/behat.yml
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: silverstripe-advancedworkflow
-          endtoend_config: vendor/symbiote/silverstripe-advancedworkflow/behat.yml
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: admin
-          endtoend_config: vendor/silverstripe/admin/behat.yml
-          endtoend_tags: job1
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: admin
-          endtoend_config: vendor/silverstripe/admin/behat.yml
-          endtoend_tags: job2
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: admin
-          endtoend_config: vendor/silverstripe/admin/behat.yml
-          endtoend_tags: job3,job4,job5,job6
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: asset-admin
-          endtoend_config: vendor/silverstripe/asset-admin/behat.yml
-          endtoend_tags: job1
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: asset-admin
-          endtoend_config: vendor/silverstripe/asset-admin/behat.yml
-          endtoend_tags: job2
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: asset-admin
-          endtoend_config: vendor/silverstripe/asset-admin/behat.yml
-          endtoend_tags: job3,job4,job5,job6
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: blog
-          endtoend_config: vendor/silverstripe/blog/behat.yml
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: cms
-          endtoend_config: vendor/silverstripe/cms/behat.yml
-          endtoend_tags: job1
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: cms
-          endtoend_config: vendor/silverstripe/cms/behat.yml
-          endtoend_tags: job2
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: cms
-          endtoend_config: vendor/silverstripe/cms/behat.yml
-          endtoend_tags: job3,job4,job5,job6
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: linkfield
-          endtoend_config: vendor/silverstripe/linkfield/behat.yml
-          endtoend_tags: job1
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: linkfield
-          endtoend_config: vendor/silverstripe/linkfield/behat.yml
-          endtoend_tags: job2,job3,job4,job5
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: mfa
-          endtoend_config: vendor/silverstripe/mfa/behat.yml
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: session-manager
-          endtoend_config: vendor/silverstripe/session-manager/behat.yml
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: sharedraftcontent
-          endtoend_config: vendor/silverstripe/sharedraftcontent/behat.yml
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: siteconfig
-          endtoend_config: vendor/silverstripe/siteconfig/behat.yml
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: subsites
-          endtoend_config: vendor/silverstripe/subsites/behat.yml
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: taxonomy
-          endtoend_config: vendor/silverstripe/taxonomy/behat.yml
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: totp-authenticator
-          endtoend_config: vendor/silverstripe/totp-authenticator/behat.yml
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: userforms
-          endtoend_config: vendor/silverstripe/userforms/behat.yml
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: versioned-admin
-          endtoend_config: vendor/silverstripe/versioned-admin/behat.yml
-          endtoend_tags: job1
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: versioned-admin
-          endtoend_config: vendor/silverstripe/versioned-admin/behat.yml
-          endtoend_tags: job2,job3,job4,job5
+  # ci:
+  #   name: CI
+  #   uses: silverstripe/gha-ci/.github/workflows/ci.yml@v1
+  #   with:
+  #     # Use simple_matrix to limit the number of created jobs
+  #     # phpunit.xml.dist has a large number of testsuites, all of which are tested with
+  #     # multiple versions of php + databases in both the modules themselves and other recipes
+  #     # such as recipe-form-building
+  #     simple_matrix: true
+  #     # Also include jobs with the lowest version of PHP with --prefer-lowest and
+  #     # the highest version of PHP to ensure everything installs
+  #     # Run recipe-cms testsuite because that's the most likely to have weird conflicts e.g. graphql
+  #     extra_jobs: |
+  #       - php: 8.3
+  #         composer_args: --prefer-lowest
+  #         phpunit: true
+  #         phpunit_suite: recipe-cms
+  #       - php: 8.3
+  #         phpunit: true
+  #         phpunit_suite: recipe-cms
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: silverstripe-elemental
+  #         endtoend_config: vendor/dnadesign/silverstripe-elemental/behat.yml
+  #         endtoend_tags: job1
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: silverstripe-elemental
+  #         endtoend_config: vendor/dnadesign/silverstripe-elemental/behat.yml
+  #         endtoend_tags: job2
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: silverstripe-elemental
+  #         endtoend_config: vendor/dnadesign/silverstripe-elemental/behat.yml
+  #         endtoend_tags: job3
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: silverstripe-elemental
+  #         endtoend_config: vendor/dnadesign/silverstripe-elemental/behat.yml
+  #         endtoend_tags: job4
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: silverstripe-elemental
+  #         endtoend_config: vendor/dnadesign/silverstripe-elemental/behat.yml
+  #         endtoend_tags: job5
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: silverstripe-elemental
+  #         endtoend_config: vendor/dnadesign/silverstripe-elemental/behat.yml
+  #         endtoend_tags: job6,job7,job8,job9
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: silverstripe-elemental-userforms
+  #         endtoend_config: vendor/dnadesign/silverstripe-elemental-userforms/behat.yml
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: silverstripe-advancedworkflow
+  #         endtoend_config: vendor/symbiote/silverstripe-advancedworkflow/behat.yml
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: admin
+  #         endtoend_config: vendor/silverstripe/admin/behat.yml
+  #         endtoend_tags: job1
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: admin
+  #         endtoend_config: vendor/silverstripe/admin/behat.yml
+  #         endtoend_tags: job2
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: admin
+  #         endtoend_config: vendor/silverstripe/admin/behat.yml
+  #         endtoend_tags: job3,job4,job5,job6
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: asset-admin
+  #         endtoend_config: vendor/silverstripe/asset-admin/behat.yml
+  #         endtoend_tags: job1
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: asset-admin
+  #         endtoend_config: vendor/silverstripe/asset-admin/behat.yml
+  #         endtoend_tags: job2
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: asset-admin
+  #         endtoend_config: vendor/silverstripe/asset-admin/behat.yml
+  #         endtoend_tags: job3,job4,job5,job6
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: blog
+  #         endtoend_config: vendor/silverstripe/blog/behat.yml
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: cms
+  #         endtoend_config: vendor/silverstripe/cms/behat.yml
+  #         endtoend_tags: job1
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: cms
+  #         endtoend_config: vendor/silverstripe/cms/behat.yml
+  #         endtoend_tags: job2
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: cms
+  #         endtoend_config: vendor/silverstripe/cms/behat.yml
+  #         endtoend_tags: job3,job4,job5,job6
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: linkfield
+  #         endtoend_config: vendor/silverstripe/linkfield/behat.yml
+  #         endtoend_tags: job1
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: linkfield
+  #         endtoend_config: vendor/silverstripe/linkfield/behat.yml
+  #         endtoend_tags: job2,job3,job4,job5
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: mfa
+  #         endtoend_config: vendor/silverstripe/mfa/behat.yml
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: session-manager
+  #         endtoend_config: vendor/silverstripe/session-manager/behat.yml
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: sharedraftcontent
+  #         endtoend_config: vendor/silverstripe/sharedraftcontent/behat.yml
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: siteconfig
+  #         endtoend_config: vendor/silverstripe/siteconfig/behat.yml
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: subsites
+  #         endtoend_config: vendor/silverstripe/subsites/behat.yml
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: taxonomy
+  #         endtoend_config: vendor/silverstripe/taxonomy/behat.yml
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: totp-authenticator
+  #         endtoend_config: vendor/silverstripe/totp-authenticator/behat.yml
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: userforms
+  #         endtoend_config: vendor/silverstripe/userforms/behat.yml
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: versioned-admin
+  #         endtoend_config: vendor/silverstripe/versioned-admin/behat.yml
+  #         endtoend_tags: job1
+  #       - php: 8.3
+  #         endtoend: true
+  #         endtoend_suite: versioned-admin
+  #         endtoend_config: vendor/silverstripe/versioned-admin/behat.yml
+  #         endtoend_tags: job2,job3,job4,job5
+
+  licenses:
+    name: Licenses
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871 # v4.2.1
+      - name: Get PHP version
+        id: phpversion
+        run: |
+          PHP=$(jq -r '.require["php"]' composer.json)
+          # Remove the leading caret
+          PHP=${PHP//^/}
+          echo "::set-output name=version::$PHP"
+      - name: Install PHP
+        uses: shivammathur/setup-php@c541c155eee45413f5b09a52248675b1a2575231 # v2.31.1
+        with:
+          php-version: ${{ steps.phpversion.outputs.version }}
+          extensions: curl, dom, gd, intl, json, ldap, mbstring, mysql, tidy, xdebug, zip
+          tools: composer:v2
+          coverage: xdebug
+      - name: Composer install
+        run: composer install
+      - name: Check licenses
+        run: |
+          # Validate licenses of all composer dependencies are allowed
+          echo "Checking licenses of all dependencies"
+          composer global require madewithlove/license-checker
+          COMPOSER_GLOBAL_HOME=$(composer -q -n config --global home)
+          # Fetch a list of allowed SPDX identifiers from the repository
+          URL=https://raw.githubusercontent.com/silverstripe/gha-run-tests/refs/heads/1/allowed-spdx-delimited.txt
+          echo "Fetching from $URL"
+          SPDX_ALLOWED_DELIMITED=$(curl -s $URL)
+          echo "SPDX_ALLOWED_DELIMITED is $SPDX_ALLOWED_DELIMITED"
+          if [[ $SPDX_ALLOWED_DELIMITED =~ "404: Not Found" ]]; then
+            echo "Failed to fetch remote list of allowed SPDX identifiers, falling back to default list"
+            SPDX_ALLOWED_DELIMITED='xMIT;MIT-0;ISC;0BSD;BSD-2-Clause;BSD-3-Clause;Apache-2.0;Python-2.0;CC0-1.0;CC-BY-3.0;CC-BY-4.0;Public Domain;Unlicense'
+          else
+            echo "Succesfully fetched remote list of allowed SPDX identifiers"
+            SPDX_ALLOWED_DELIMITED=$(echo $SPDX_ALLOWED_DELIMITED | tr -d '\n')
+          fi
+          # Update the licenses in the installed.json file to be sorted so that allowed SPDX identifier
+          # are at the top of the list. This is done because the license-checker will only check the first SPDX.
+          SPDX_ALLOWED_DELIMITED=$SPDX_ALLOWED_DELIMITED php -r '
+            $allowedSpdxDelimted = getenv("SPDX_ALLOWED_DELIMITED");
+            $allowedSpdx = explode(";", $allowedSpdxDelimted);
+            $filename = "vendor/composer/installed.json";
+            $contents = file_get_contents("vendor/composer/installed.json");
+            $json = json_decode($contents, true);
+            foreach ($json["packages"] as &$package) {
+              # A handful of silverstripe packages do not have a license field, though we do not need to check them
+              if (str_starts_with($package["name"], "silverstripe/")) {
+                continue;
+              }
+              if (!isset($package["license"])) {
+                throw new Exception("License field missing for package " . $package["name"]);
+              }
+              usort($package["license"], fn ($spdx) => in_array($spdx, $allowedSpdx) ? -1 : 1);
+            }
+            file_put_contents($filename, json_encode($json, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+          '
+          # Translate " " to "_" (and back again later) for any SPDX that has a space in it, such as "Public Domain"
+          # Otherwise the bash for loop will split on the space
+          SPDX_ALLOWED_LIST=$(echo $SPDX_ALLOWED_DELIMITED | tr " " "_" | tr ";" "\n")
+          SPDX_USED_LIST=$($COMPOSER_GLOBAL_HOME/vendor/bin/license-checker --no-dev used)
+          for SPDX_USED in $SPDX_USED_LIST; do
+            IS_ALLOWED=0
+            for SPDX_ALLOWED in $SPDX_ALLOWED_LIST; do
+              SPDX_ALLOWED=$(echo $SPDX_ALLOWED | tr "_" " ")
+              if [[ $SPDX_USED == $SPDX_ALLOWED ]]; then
+                IS_ALLOWED=1
+                break
+              fi
+            done
+            if [[ $IS_ALLOWED == 0 ]]; then
+              echo "License $SPDX_USED found in composer dependencies is not allowed. Check vendor/composer/installed.json"
+              exit 1
+            fi
+          done
+          echo "All licenses are allowed"
