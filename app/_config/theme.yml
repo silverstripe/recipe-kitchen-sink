@@ -1,8 +1,0 @@
----
-Name: theme
----
-SilverStripe\View\SSViewer:
-  themes:
-    - '$public'
-    - 'simple'
-    - '$default'
