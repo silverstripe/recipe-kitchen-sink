@@ -36,6 +36,7 @@
         </testsuite>
 
         <testsuite name="g2">
+            <directory>vendor/silverstripe/campaign-admin/tests/php/</directory>
             <directory>vendor/silverstripe/hybridsessions/tests</directory>
             <directory>vendor/silverstripe/tagfield/tests</directory>
             <directory>vendor/silverstripe/taxonomy/tests</directory>

@@ -35,7 +35,8 @@
         "silverstripe/graphql": "6.0.x-dev",
         "silverstripe/subsites": "4.0.x-dev",
         "silverstripe/blog": "5.0.x-dev",
-        "silverstripe/crontask": "4.0.x-dev"
+        "silverstripe/crontask": "4.0.x-dev",
+        "silverstripe/campaign-admin": "3.0.x-dev"
     },
     "require-dev": {
         "silverstripe/frameworktest": "^2",

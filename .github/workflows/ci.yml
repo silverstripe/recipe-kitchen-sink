@@ -100,6 +100,10 @@ jobs:
           endtoend_config: vendor/silverstripe/blog/behat.yml
         - php: 8.3
           endtoend: true
+          endtoend_suite: campaign-admin
+          endtoend_config: vendor/silverstripe/campaign-admin/behat.yml
+        - php: 8.3
+          endtoend: true
           endtoend_suite: cms
           endtoend_config: vendor/silverstripe/cms/behat.yml
           endtoend_tags: job1
