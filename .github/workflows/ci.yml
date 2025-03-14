@@ -119,6 +119,10 @@ jobs:
           endtoend_tags: job3,job4,job5,job6
         - php: 8.3
           endtoend: true
+          endtoend_suite: htmleditor-tinymce
+          endtoend_config: vendor/silverstripe/htmleditor-tinymce/behat.yml
+        - php: 8.3
+          endtoend: true
           endtoend_suite: linkfield
           endtoend_config: vendor/silverstripe/linkfield/behat.yml
           endtoend_tags: job1
