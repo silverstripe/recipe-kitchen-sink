@@ -71,6 +71,7 @@
             <directory>vendor/silverstripe/realme/tests</directory>
             <directory>vendor/silverstripe/mfa/tests</directory>
             <directory>vendor/silverstripe/totp-authenticator/tests</directory>
+            <directory>vendor/silverstripe/webauthn-authenticator/tests</directory>
             <directory>vendor/silverstripe/login-forms/tests</directory>
         </testsuite>
 
