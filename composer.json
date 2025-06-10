@@ -37,13 +37,13 @@
         "silverstripe/blog": "5.x-dev",
         "silverstripe/crontask": "4.x-dev",
         "silverstripe/campaign-admin": "3.x-dev",
-        "silverstripe/environmentcheck": "4.x-dev"
+        "silverstripe/environmentcheck": "4.x-dev",
+        "silverstripe/webauthn-authenticator": "6.x-dev"
     },
     "require-dev": {
         "silverstripe/frameworktest": "^2",
         "silverstripe/graphql-devtools": "2.x-dev",
         "silverstripe/recipe-testing": "^4",
-        "silverstripe/webauthn-authenticator": "6.x-dev",
         "mikey179/vfsstream": "^1.6"
     },
     "extra": {
