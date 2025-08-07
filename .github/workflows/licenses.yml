@@ -45,6 +45,30 @@ jobs:
           extensions: curl, dom, gd, intl, json, ldap, mbstring, mysql, tidy, zip
           tools: composer:v2
 
+      # Prefer install to source so that yarn.lock is included for each supported module
+      # yarn.lock is normally included in .gitattributes so that it is not part
+      # of a dist install, hence we need to fetch source
+      - name: Set preferred-install
+        run: |
+          php -r '
+            $j = json_decode(file_get_contents("composer.json"));
+            if (empty($j->config)) {
+              $j->config = new stdClass();
+            }
+            if (empty($j->config->{"preferred-install"})) {
+              $j->config->{"preferred-install"} = new stdClass();
+            }
+            $j->config->{"preferred-install"}->{"silverstripe/*"} = "source";
+            $j->config->{"preferred-install"}->{"symbiote/*"} = "source";
+            $j->config->{"preferred-install"}->{"dnadesign/*"} = "source";
+            $j->config->{"preferred-install"}->{"bringyourownideas/*"} = "source";
+            $j->config->{"preferred-install"}->{"colymba/*"} = "source";
+            $j->config->{"preferred-install"}->{"cwp/*"} = "source";
+            $j->config->{"preferred-install"}->{"tractorcow/*"} = "source";
+            $j->config->{"preferred-install"}->{"*"} = "dist";
+            file_put_contents("composer.json", json_encode($j, JSON_PRETTY_PRINT + JSON_UNESCAPED_SLASHES));
+          '
+
       - name: Composer install
         run: composer install
 
@@ -111,6 +135,11 @@ jobs:
           fi
           # This loads nvm
           [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+          # glob-to-regexp@0.3.0 has a licence in its readme that is close to a BSD-2 licence
+          # https://github.com/fitzgen/glob-to-regexp/tree/60be6c56893e80ba8719c31bd919e9b8f84c0c1d?tab=readme-ov-file#license
+          # jquery.are-you-sure@1.9.0 has "The same license as jquery" at the bottom of its readme
+          # "Dual licensed under the MIT or GPL Version 2 licenses"
+          # https://github.com/codedance/jquery.AreYouSure/tree/098b3d3a35a0bd09fd3bbab514dd7d2f4159e680
           EXCLUDE_PACKAGES='@silverstripe/react-injector@0.2.1;cwp-watea-theme@4.0.0;cwp-starter-theme@4.0.0;glob-to-regexp@0.3.0;jquery.are-you-sure@1.9.0'
           # Loop all package.json files that were previously installed by composer install
           BASEDIR=$(pwd)
