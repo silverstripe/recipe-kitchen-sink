@@ -98,10 +98,6 @@ jobs:
           endtoend_tags: job3,job4,job5,job6
         - php: 8.3
           endtoend: true
-          endtoend_suite: blog
-          endtoend_config: vendor/silverstripe/blog/behat.yml
-        - php: 8.3
-          endtoend: true
           endtoend_suite: campaign-admin
           endtoend_config: vendor/silverstripe/campaign-admin/behat.yml
         - php: 8.3
@@ -149,10 +145,6 @@ jobs:
           endtoend: true
           endtoend_suite: siteconfig
           endtoend_config: vendor/silverstripe/siteconfig/behat.yml
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: subsites
-          endtoend_config: vendor/silverstripe/subsites/behat.yml
         - php: 8.3
           endtoend: true
           endtoend_suite: taxonomy

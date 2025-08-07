@@ -9,7 +9,6 @@
         "silverstripe/recipe-plugin": "2.x-dev",
         "silverstripe/installer": "6.x-dev",
         "silverstripe/developer-docs": "6.x-dev",
-        "silverstripe/hybridsessions": "4.x-dev",
         "silverstripe/totp-authenticator": "6.x-dev",
         "silverstripe/mfa": "6.x-dev",
         "silverstripe/gridfieldqueuedexport": "4.x-dev",
@@ -33,14 +32,11 @@
         "silverstripe/dynamodb": "6.x-dev",
         "silverstripe/linkfield": "5.x-dev",
         "silverstripe/graphql": "6.x-dev",
-        "silverstripe/subsites": "4.x-dev",
-        "silverstripe/blog": "5.x-dev",
-        "silverstripe/crontask": "4.x-dev",
         "silverstripe/campaign-admin": "3.x-dev",
-        "silverstripe/environmentcheck": "4.x-dev",
-        "silverstripe/webauthn-authenticator": "6.x-dev"
+        "silverstripe/environmentcheck": "4.x-dev"
     },
     "require-dev": {
+        "silverstripe/webauthn-authenticator": "6.x-dev",
         "silverstripe/frameworktest": "^2",
         "silverstripe/graphql-devtools": "2.x-dev",
         "silverstripe/recipe-testing": "^4",
