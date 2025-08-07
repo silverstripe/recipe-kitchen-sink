@@ -37,15 +37,12 @@
 
         <testsuite name="g2">
             <directory>vendor/silverstripe/campaign-admin/tests/php/</directory>
-            <directory>vendor/silverstripe/environmentcheck/tests</directory>
             <directory>vendor/silverstripe/htmleditor-tinymce/tests/php</directory>
-            <directory>vendor/silverstripe/hybridsessions/tests</directory>
             <directory>vendor/silverstripe/tagfield/tests</directory>
             <directory>vendor/silverstripe/taxonomy/tests</directory>
         </testsuite>
 
         <testsuite name="g3">
-            <directory>vendor/silverstripe/blog/tests</directory>
             <directory>vendor/silverstripe/lumberjack/tests</directory>
             <directory>vendor/silverstripe/spamprotection/tests</directory>
             <directory>vendor/silverstripe/sharedraftcontent/tests</directory>
@@ -71,7 +68,6 @@
             <directory>vendor/silverstripe/realme/tests</directory>
             <directory>vendor/silverstripe/mfa/tests</directory>
             <directory>vendor/silverstripe/totp-authenticator/tests</directory>
-            <directory>vendor/silverstripe/webauthn-authenticator/tests</directory>
             <directory>vendor/silverstripe/login-forms/tests</directory>
         </testsuite>
 
