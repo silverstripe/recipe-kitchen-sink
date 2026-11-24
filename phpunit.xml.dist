@@ -24,6 +24,7 @@
             <directory>vendor/silverstripe/asset-admin/tests/php/</directory>
             <directory>vendor/silverstripe/siteconfig/tests/php/</directory>
             <directory>vendor/silverstripe/reports/tests/</directory>
+            <directory>vendor/silverstripe/userdocs-admin/tests/php/</directory>
             <!-- CMS needs to run last because the SearchFormTest enables FulltextSearchable  -->
             <directory>vendor/silverstripe/cms/tests/</directory>
         </testsuite>
